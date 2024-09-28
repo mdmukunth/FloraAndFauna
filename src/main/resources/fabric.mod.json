@@ -1,0 +1,40 @@
+	{
+	"schemaVersion": 1,
+	"id": "flora-and-fauna",
+	"version": "${version}",
+	"name": "Flora and Fauna",
+	"description": "Flora and Fauna adds many new additions to your world, including plants, animals, and even food. Enjoy!",
+	"authors": [
+		"Randomizr"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/flora-and-fauna/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.whosrandom.floraandfauna.FloraAndFauna"
+		],
+		"fabric-datagen": [
+			"com.whosrandom.floraandfauna.FloraAndFaunaDataGenerator"
+		],
+		"client": [
+			"com.whosrandom.floraandfauna.FloraAndFaunaClient"
+		]
+	},
+	"mixins": [
+		"flora-and-fauna.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
